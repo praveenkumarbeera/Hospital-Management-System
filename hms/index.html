@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+      body {
+ background-image: url("a.jpg");
+background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+        background-color: #f2f2f2;
+        text-align: center;
+        color: #333;
+        font-family: Arial, sans-serif;
+        padding: 0;
+      }
+#prj {
+     width: 700px; 
+    height: auto;
+   margin-top:50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); 
+    border-radius: 10px; 
+}
+      .container {
+        background-color: #fff;
+        width: 55%;
+        margin: 0 auto;
+        margin-top:50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        padding: 20px;
+      }
+
+      .img, .content {
+        text-align: center;
+        flex: 1;
+        padding: 10px;
+      }
+
+      .img img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .buttons-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0px;
+        }
+        .button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            color: #fff;
+  padding: 15px 25px;
+  background-color: #38D2D2;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  cursor: pointer;
+        }
+        .button i {
+            font-size: 24px;
+        }
+        .button-text {
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+      h1 {
+        font-size: 24px;
+        
+      }
+    </style>
+  </head>
+  <body>
+<img id="prj" src="project.jpg" alt="care hospitals treatment" fetchpriority="high">
+
+    <div class="container">
+      <div class="img">
+        <img class="ch-img" src="https://www.carehospitals.com/assets/images/main/left-image-care.png" alt=" hospital" fetchpriority="high">
+      </div>
+      <div class="content">
+        <div class="buttons-container">
+        <!-- Patient Registration Button -->
+        <div class="button" onclick="redirectToPatientPage()">
+            <i class="fas fa-user-plus"></i> <!-- Patient Registration Icon -->
+            <div class="button-text">Patient Registration</div>
+        </div>
+        <!-- Doctor Login Button -->
+        <div class="button" onclick="redirectToDoctorPage()">
+            <i class="fas fa-user-md"></i> <!-- Doctor Login Icon -->
+            <div class="button-text">Doctor Login</div>
+        </div>
+    </div>
+      </div>
+    </div>
+<script>
+function redirectToDoctorPage() {
+            // Redirect to doctor.html
+            window.location.href = 'doctor.html';
+        }
+function redirectToPatientPage() {
+            // Redirect to doctor.html
+            window.location.href = 'Patient.html';
+        }
+</script>
+  </body>
+</html>

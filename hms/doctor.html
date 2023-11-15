@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url("e.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+
+        #prj {
+            width: 700px;
+            height: auto;
+            margin-top: 50px;
+            margin-bottom:100px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .form-box {
+            width: 50%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        h2 {
+            color: #555;
+            font-size: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        button {
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <img id="prj" src="project.jpg" alt="care hospitals treatment" fetchpriority="high">
+    <div class="form-box">
+        <form id="doctorLoginForm">
+            <h1>Doctor Login</h1>
+            <input type="text" id="doctorUsername" placeholder="Username" required>
+            <input type="password" id="doctorPassword" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</div>
+<script src="doctorScript.js"></script>
+</body>
+</html>

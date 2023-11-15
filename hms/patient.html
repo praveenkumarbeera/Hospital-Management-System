@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-image: url("d.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            
+ 
+            
+        }
+#prj {
+            width: 700px;
+            height: auto;
+            margin-top: 40px;
+            margin-bottom:80px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        #registrationBox {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+        h2 {
+            color: #555;
+            font-size: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        button {
+            padding: 10px;
+            margin: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <img id="prj" src="project.jpg" alt="care hospitals treatment" fetchpriority="high">
+    <div id="registrationBox">
+        <h1>Welcome to VSM Hospital</h1>
+        <h2>Fill the form for doctor consultation</h2>
+        <form id="patientRegistrationForm">
+            <input type="text" id="patientName" placeholder="Name" required>
+            <input type="email" id="patientEmail" placeholder="Email" required>
+            <input type="tel" id="patientPhone" placeholder="Phone" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+<script src="patientScript.js"></script>
+</body>
+</html>
